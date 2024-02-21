@@ -1,0 +1,203 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Random rnd = new Random();
+            int randomNumber3 = rnd.Next(100);
+            int rnd_num = rnd.Next(100);
+            Console.WriteLine("Hi I'm a bot and I'm going to play a guess the number game with you");
+            Console.WriteLine("Choose the mode (1 - you guess the number; 2 - me guess the number)");
+            int r = Convert.ToInt32(Console.ReadLine());
+            if (r == 1)
+            {
+
+                Console.WriteLine("I chose a number. What level will you choose? Simple - 1, Medium - 2, Difficult - 3 (the number of attempts depends on the level)");
+                int g = Convert.ToInt32(Console.ReadLine());
+                if (g == 1)
+                {
+                    Console.WriteLine("Easy level is selected. You have 5 attempts");
+                    Console.WriteLine("first attempt, choose a number from 1 to 100");
+                    int game1 = Convert.ToInt32(Console.ReadLine());
+                    if (game1 == rnd_num)
+                    {
+                        Console.WriteLine("WOW! You guessed it on the first try!Congratulations!");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, you didn't guess, but you have 4 more tries!");
+                        Console.WriteLine("second attempt, choose a number from 1 to 100");
+                        int game2 = Convert.ToInt32(Console.ReadLine());
+                        if (game2 == rnd_num)
+                        {
+                            Console.WriteLine("Сongratulations! You win!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Sorry, you didn't guess, but you have 3 more tries!");
+                            Console.WriteLine("third attempt, choose a number from 1 to 100");
+                            int game3 = Convert.ToInt32(Console.ReadLine());
+                            if (game3 == rnd_num)
+                            {
+                                Console.WriteLine("Сongratulations! You win!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Sorry, you didn't guess, but you have 2 more tries!");
+                                Console.WriteLine("third attempt, choose a number from 1 to 100");
+                                int game4 = Convert.ToInt32(Console.ReadLine());
+                                if (game4 == rnd_num)
+                                {
+                                    Console.WriteLine("Сongratulations! You win!");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Sorry, you didn't guess, but you have 1 more tries!");
+                                    Console.WriteLine("third attempt, choose a number from 1 to 100");
+                                    int game5 = Convert.ToInt32(Console.ReadLine());
+                                    if (game5 == rnd_num)
+                                    {
+                                        Console.WriteLine("Сongratulations! You win!");
+                                    }
+                                    else
+                                    {
+
+
+                                        Console.WriteLine("unfortunately, you didn't guess ( , but don't get upset, try again) This number is " + rnd_num);
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (g == 2)
+                {
+                    Console.WriteLine("Easy level is selected. You have 3 attempts");
+                    Console.WriteLine("first attempt, choose a number from 1 to 100");
+                    int game1 = Convert.ToInt32(Console.ReadLine());
+                    if (game1 == rnd_num)
+                    {
+                        Console.WriteLine("WOW! You guessed it on the first try!Congratulations!");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, you didn't guess, but you have 2 more tries!");
+                        Console.WriteLine("second attempt, choose a number from 1 to 100");
+                        int game2 = Convert.ToInt32(Console.ReadLine());
+                        if (game2 == rnd_num)
+                        {
+                            Console.WriteLine("Сongratulations! You win!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Sorry, you didn't guess, but you have 1 more tries!");
+                            Console.WriteLine("third attempt, choose a number from 1 to 100");
+                            int game3 = Convert.ToInt32(Console.ReadLine());
+                            if (game3 == rnd_num)
+                            {
+                                Console.WriteLine("Сongratulations! You win!");
+                            }
+                            else
+                            {
+
+                                Console.WriteLine("unfortunately, you didn't guess ( , but don't get upset, try again) This number is " + rnd_num);
+
+                            }
+                        }
+                    }
+                }
+                if (g == 3)
+                {
+                    Console.WriteLine("Easy level is selected. You have 2 attempts");
+                    Console.WriteLine("first attempt, choose a number from 1 to 100");
+                    int game1 = Convert.ToInt32(Console.ReadLine());
+                    if (game1 == rnd_num)
+                    {
+                        Console.WriteLine("WOW! You guessed it on the first try!Congratulations!");
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, you didn't guess, but you have 1 more tries!");
+                        Console.WriteLine("second attempt, choose a number from 1 to 100");
+                        int game2 = Convert.ToInt32(Console.ReadLine());
+                        if (game2 == rnd_num)
+                        {
+                            Console.WriteLine("Сongratulations! You win!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("unfortunately, you didn't guess ( , but don't get upset, try again) This number is " + rnd_num);
+                        }
+                    }
+                }
+            }
+            if (r == 2)
+            {
+                Random rndm = new Random();
+                int uio = rndm.Next(100);
+                Console.WriteLine("First guess the number. Did you remember? Then start!");
+                Console.WriteLine("I think you guessed the number " + uio);
+                Console.WriteLine("Am I right? 1 - yes, 2 - no");
+                int y = Convert.ToInt32(Console.ReadLine());
+                if (y == 1)
+                {
+                    Console.WriteLine("Hooray! I guessed!");
+                }
+                if (y == 2)
+                {
+                    int ui = rndm.Next(100);
+                    Console.WriteLine("Eh, I didn't guess(, But I have 3 more attempts!");
+                    Console.WriteLine("I think you guessed the number " + ui);
+                    Console.WriteLine("Am I right? 1 - yes, 2 - no");
+                    int р = Convert.ToInt32(Console.ReadLine());
+                    if (р == 1)
+                    {
+                        Console.WriteLine("Hooray! I guessed!");
+                    }
+                    if (р == 2)
+                    {
+                        int uia = rndm.Next(100);
+                        Console.WriteLine("Eh, I didn't guess(, But I have 2 more attempts!");
+                        Console.WriteLine("I think you guessed the number " + uia);
+                        Console.WriteLine("Am I right? 1 - yes, 2 - no");
+                        int o = Convert.ToInt32(Console.ReadLine());
+                        if (o == 1)
+                        {
+                            Console.WriteLine("Hooray! I guessed!");
+                        }
+                        if (o == 2)
+                        {
+                            int uig = rndm.Next(100);
+                            Console.WriteLine("Eh, I didn't guess(, But I have 1 more attempts!");
+                            Console.WriteLine("I think you guessed the number " + uig);
+                            Console.WriteLine("Am I right? 1 - yes, 2 - no");
+                            int l = Convert.ToInt32(Console.ReadLine());
+                            if (l == 1)
+                            {
+                                Console.WriteLine("Hooray! I guessed!");
+                            }
+                            if (l == 2)
+                            {
+                                Console.WriteLine("Ehhh I didn't guess, thanks for the game. If it's not a secret, what number did you guess?");
+                                int k = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine("This is " + k + " I was very close to guessing)");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
